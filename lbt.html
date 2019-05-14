@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .wrapper {
+        position: relative;
+        margin: 100px auto 0px;
+        width: 1226px;
+        height: 460px;
+        overflow: hidden;
+    }
+
+    .wrapper .sliderPage {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 8582px;
+        height: 460px;
+    }
+
+    .wrapper .sliderPage li {
+        width: 1226px;
+        height: 460px;
+        float: left;
+    }
+
+    .wrapper .sliderPage li img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper .btn:hover {
+        opacity: .5;
+    }
+
+    .wrapper .btn {
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        width: 40px;
+        height: 70px;
+        color: #fff;
+        background: #000;
+        text-align: center;
+        line-height: 70px;
+        font-size: 25px;
+        opacity: .1;
+        cursor: pointer;
+    }
+
+    .wrapper .leftBtn {
+        left: 0px;
+    }
+
+    .wrapper .rightBtn {
+        right: 0px;
+    }
+
+    .wrapper .sliderIndex {
+        position: absolute;
+        width: 100%;
+        bottom: 15px;
+        right: 20px;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .wrapper .sliderIndex span {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        background-color: #ccc;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .wrapper .sliderIndex .active {
+        background-color: #666;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <ul class="sliderPage">
+            <li>
+                <img src="img/lb0.jpg">
+            </li>
+            <li>
+                <img src="img/lb1.jpg">
+            </li>
+            <li>
+                <img src="img/lb2.jpg">
+            </li>
+            <li>
+                <img src="img/lb3.jpg">
+            </li>
+            <li>
+                <img src="img/lb4.jpg">
+            </li>
+            <li>
+                <img src="img/lb5.jpg">
+            </li>
+            <li>
+                <img src="img/lb0.jpg">
+            </li>
+        </ul>
+        <div class="btn leftBtn">&lt;</div>
+        <div class="btn rightBtn">&gt;</div>
+        <div class="sliderIndex">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <script src="js/move.js"></script>
+</body>
+
+</html>

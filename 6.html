@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">1</div>
+    <ul class="list">
+        <li><a href=""></a></li>
+        <li>
+        <li></li>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        // var obj = {
+        //     _instance: null,
+        //     createDiv: function () {
+        //         if (!this._instance) {
+        //             this._instance = document.createElement("div");
+        //         }
+        //         return this._instance;
+        //     }
+        // };
+        // var div1 = obj.createDiv();
+        // var div2 = obj.createDiv();
+        // console.log(div1 === div2);
+
+
+        // function fn6(fn) {
+        //     return fn(3, 5);
+        // }
+
+        // function fn7(a, b) {
+        //     return a + b;
+        // }
+
+        // function fn8(a, b) {
+        //     return a * b;
+        // }
+        // var s = fn6(fn7);
+        // var s1 = fn6(fn8);
+        // console.log(s, s1);
+
+
+
+
+        forEach=function (arr,fn) {    for(var i=0,l=arr.length;i<l;i++){        var c=arr[i];        if(fn.call(c,i,c)===false){            return false;        }    } }; function box1(index,num) {    console.log(index,num); } var arr=[10,9,8,7,6,5,4]; forEach(arr,box1)
+    </script>
+
+</body>
+
+</html>
