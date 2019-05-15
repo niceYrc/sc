@@ -38,6 +38,7 @@ a {
     width: 100%;
     height: 40px;
     background-color: #333333;
+    z-index: 20;
 }
 #nav{
     height: 40px;
@@ -148,7 +149,7 @@ a {
     color: #3e3e3e;
     line-height: 98px;
     box-shadow:black 0px 1px 4px -2px;
-    z-index: -2;
+    z-index:2;
 }
 
 
@@ -177,7 +178,7 @@ a {
     margin-left: 170px;
     width: 650px;
     height: 63px;
-    padding: 25px 0 0 30px;
+    padding: 25px 0 12px 30px;
     float: left;
 }
 #search .nav-list li{
@@ -203,10 +204,10 @@ a {
     position: relative;
     float: right;
     margin-top: 25px;
-    z-index: -5;
+    z-index:1;
 }
 #search .ssl>input{
-    float: left;
+
     font-size: 16px;
     padding: 0;
     width: 243px;
@@ -215,7 +216,6 @@ a {
     vertical-align: middle; 
 }
 #search .ssl>button{
-    float: left;
     padding: 0;
     width: 50px;
     height: 50px;
@@ -328,8 +328,9 @@ a {
     height: 460px;
     position: absolute;
     z-index: 3;
-    background: rgba(0, 0, 0, .7)
+    background: rgba(0, 0, 0, .7);
 }
+
 #cbl .cblist{
     padding-top: 20px;
 }
@@ -356,6 +357,9 @@ a {
     z-index: 5;
     opacity:1;
 }
+#cbl .cblist li:hover #xq{
+    display: block;
+}
 #cbl #xq{
     border-top: 1px solid #e1e1e1;
     width: 992px;
@@ -365,6 +369,7 @@ a {
     top: 0;
     left:234px; 
     box-shadow:black 0px 1px 4px -2px;
+    display: none;
 }
 #xq>ul{
     width: 992px;
@@ -482,12 +487,90 @@ a {
     margin-bottom: 26px;
     height: 170px;
     background-color: aquamarine;
+    position: relative;
 }
+#msg .mleft{
+    width: 234px;
+    height: 170px;
+    background: #605752;
+    display: inline-block;
+}
+#msg .mleft>ul{
+    width: 234px;
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
+}
+#msg .mleft>ul>li{
+    width: 76px;
+    height: 83px;
+    text-align: center;
+   
+}
+#msg .mleft>ul>li>img{
+    text-align: center;
+    height: 25px;
+    display: block;
+    padding: 20px 0 0 25px; 
+}
+#msg .mleft>ul>li>.cz{
+    padding: 20px 0 0 20px; 
+}
+#msg .mleft>ul>li>a{
+    font-size: 12px;
+    color: #fff;
+}
+
+#msg .zs{
+    width: 316px;
+    height: 170px;
+    margin: 0 0 0 14px;
+    background: #FF6700;
+    position: absolute;
+   
+}
+
+#msg .zs1{
+    top: 0;
+    left: 234px;
+    background: url(../img/in1.jpg);
+    background-size:cover;
+
+}
+
+#msg .zs2{
+    top: 0;
+    left: 564px;
+    background: url(../img/in2.jpg);
+    background-size:cover;
+
+}
+#msg .zs3{
+    top: 0;
+    right:0;
+    background: url(../img/in3.jpg);
+    background-size:cover;
+
+}
+
+
+
+
+
 #news{
     margin-bottom: 42px;
     height: 120px;
     background-color: antiquewhite;
 }
+#news>a{
+    margin-bottom: 42px;
+    height: 120px;
+    display: block;
+    background: url(../img/news.jpg);
+    background-size:cover;
+}
+
 #phone-warp{
     width: 100%;
     height: 708px;
@@ -495,5 +578,76 @@ a {
 }
 #phone{
     height: 708px;
-    background-color: #335588;
+}
+#phone .wzh{
+    width: 1226px;
+    height: 60px;
+    padding-top: 20px;
+}
+
+#phone .wzh .leftwz{
+    float: left;
+    font-size: 21px;
+    
+    line-height: 45px;
+    color: #333;
+}
+#phone .wzh .rightwz{
+    float: right;
+    font-size: 16px;
+    line-height: 45px;
+    color: #424242;
+}
+#phone .wzh .rightwz i{
+    margin-left: 8px;
+    color: #b0b0b0;
+}
+
+
+#phone .boot{
+    width: 1226px;
+    height: 614px;
+}
+#phone .boot .leftd{
+    width: 234px;
+    height: 614px;
+    float: left;
+    background: url(../img/x1.jpg);
+    background-size:cover;
+}
+
+#phone .boot .rightd{
+    width: 992px;
+    height: 614px;
+    float: left;
+  
+}
+#phone .boot .rightd .li{
+    width: 234px;
+    height: 270px;
+    background: #fff;
+    margin: 0 0 14px 14px;
+    padding-top: 30px;
+    float: left;
+    text-align: center;
+}
+#phone .boot .rightd .li img{
+    width: 110px;
+    height: 135px;
+}
+#phone .boot .rightd .li>.p1{
+    padding-top: 15px;
+    font-size: 12px;
+    color: #333;
+    line-height: 22px;
+}
+#phone .boot .rightd .li>.p2{
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 22px;
+}
+#phone .boot .rightd .li>.p3{
+    font-size: 12px;
+    color: #ff6700;
+    line-height: 37px;
 }
