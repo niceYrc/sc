@@ -11,7 +11,7 @@ let nv7 = $('#search>.nav-list>li>.nav-cd7');
 let nv = function (dh, wjm) {
     dh.mouseover(() => {
         for (let i = 0; i < list.length; i++) {
-            list.eq(i).attr("src", "img/" +wjm+ [i + 1] + ".png")
+            list.eq(i).attr("src", "img/" + wjm + [i + 1] + ".png")
         }
         aList.css('display', 'block')
         $('#cd-warp').hover(function () {
@@ -27,13 +27,13 @@ let nv = function (dh, wjm) {
 
     })
 }
-nv(nv1,'sj')
-nv(nv2,'hm')
-nv(nv3,'ds')
-nv(nv4,'bjb')
-nv(nv5,'jd')
-nv(nv6,'xp')
-nv(nv7,'lyq')
+nv(nv1, 'sj')
+nv(nv2, 'hm')
+nv(nv3, 'ds')
+nv(nv4, 'bjb')
+nv(nv5, 'jd')
+nv(nv6, 'xp')
+nv(nv7, 'lyq')
 
 
 
@@ -82,6 +82,19 @@ gb(cb9, 'pb')
 gb(cb10, 'cxb')
 
 
+onload = function () {
+    if ((typeof (localStorage.getItem('Id'))) == 'string') {
+        $('.nav-rtxt .li1 .dls').text('我的信息');
+        $('.nav-rtxt .li2 .dls2').text('消息通知');
+        $('.nav-rtxt .li1 .dls').attr("href", "javascript:;")
+        $('.nav-rtxt .li2 .dls2').attr("href", "javascript:;")
+    } else {
+        $('.nav-rtxt .li1 .dls').text('登录');
 
+        $('.nav-rtxt .li2 .dls2').text('注册');
+
+        //    $('#yhwc .dls').css('我的信息') 
+    }
+}
 
 

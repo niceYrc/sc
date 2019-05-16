@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/niceYrc/sc#readme",
   "dependencies": {
-    "@types/jquery": "^3.3.29"
+    "@types/jquery": "^3.3.29",
+    "js-cookie": "^2.2.0"
   }
 }
