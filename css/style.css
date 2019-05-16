@@ -94,6 +94,7 @@ a {
     margin-right: 25px;
     font-size: 12px;
     line-height: 40px;
+    z-index: 20;
 }
 #nav .nav-rtxt li{
     float: left;
@@ -137,6 +138,7 @@ a {
     top:40px;
     background: #fff;
     transition-duration: .5s;
+    z-index:2;
 }
 
 #nav .gwc .gwczt {
@@ -144,12 +146,13 @@ a {
     width: 317px;
     height: 98px;
     position: absolute;
+    display: inline-block;
     right: 0;
     top:-60px;
     color: #3e3e3e;
     line-height: 98px;
     box-shadow:black 0px 1px 4px -2px;
-    z-index:2;
+    z-index:-5;
 }
 
 
