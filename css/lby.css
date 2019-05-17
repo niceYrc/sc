@@ -1,0 +1,37 @@
+#search-warp{
+    border-bottom: 1px solid #dddddd;   
+}
+#lbyxx{
+    width: 1226px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#lbyxx .crwb{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
+.crwb a{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    
+}
+.crwb a img{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border: 1px solid #f40;
+}
+.crwb a span{
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+}
+.crwb a p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #f40;
+}
