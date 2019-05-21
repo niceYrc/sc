@@ -18,6 +18,7 @@
   "homepage": "https://github.com/niceYrc/sc#readme",
   "dependencies": {
     "@types/jquery": "^3.3.29",
-    "js-cookie": "^2.2.0"
+    "js-cookie": "^2.2.0",
+    "mongoose": "^5.5.10"
   }
 }
